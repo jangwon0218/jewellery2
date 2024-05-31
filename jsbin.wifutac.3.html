@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2024 by jangwon0218 (http://jsbin.com/wifutac/3/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewelry Brand</title>
+<style id="jsbin-css">
+/* styles.css */
+
+/* Color Palette */
+:root {
+  --primary-color: #efe7dc;
+  --secondary-color: #ffffff;
+}
+
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('https://i.imgur.com/gzBECED.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-content button {
+  background-color: var(--primary-color);
+  color: #333;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-content button:hover {
+  background-color: #d9cbae;
+}
+
+/* Featured Products */
+.featured-products {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.featured-products h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.product-card {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.product-card button {
+  background-color: var(--primary-color);
+  color: #333;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #d9cbae;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: #333;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Jewelry Brand</h1>
+        <p>Discover exquisite jewelry pieces</p>
+        <button>Shop Now</button>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <h2>Best Sellers</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://i.imgur.com/Juqb6L0.jpeg" alt="Product 1">
+          <h3>Diamond Necklace</h3>
+          <p>$599.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://i.imgur.com/Juqb6L0.jpeg" alt="Product 2">
+          <h3>Sapphire Earrings</h3>
+          <p>$249.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://i.imgur.com/Juqb6L0.jpeg" alt="Product 3">
+          <h3>Ruby Bracelet</h3>
+          <p>$399.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://i.imgur.com/Juqb6L0.jpeg" alt="Product 4">
+          <h3>Emerald Ring</h3>
+          <p>$299.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://i.imgur.com/Juqb6L0.jpeg" alt="Product 5">
+          <h3>Pearl Earrings</h3>
+          <p>$179.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://i.imgur.com/Juqb6L0.jpeg" alt="Product 6">
+          <h3>Amethyst Pendant</h3>
+          <p>$149.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://i.imgur.com/Juqb6L0.jpeg" alt="Product 7">
+          <h3>Topaz Bracelet</h3>
+          <p>$299.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://i.imgur.com/Juqb6L0.jpeg" alt="Product 8">
+          <h3>Opal Ring</h3>
+          <p>$199.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Jewelry Brand</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
